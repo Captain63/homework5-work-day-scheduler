@@ -11,6 +11,8 @@ textarea {
   color: #000000;
   padding: 10px;
   cursor: pointer;
+  width: 100%;
+  height: fit-content;
 }
 
 .jumbotron {
@@ -99,6 +101,10 @@ textarea {
 }
 
 @media only screen and (max-width: 576px) {
+  h1.display-4 {
+    font-size: 2.5rem;
+  }
+  
   .hour:first-of-type {
     border-top: none;
   }
