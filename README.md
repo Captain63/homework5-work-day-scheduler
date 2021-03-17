@@ -9,4 +9,4 @@ Bootstrap enables inherently responsive layout for Work Day Scheduler with small
 https://captain63.github.io/homework5-work-day-scheduler/
 
 ## Screenshot
-![Screenshot of completed application with tasks added to timeblocks](./Assets/Images/completed-application.png)
+![Screenshot of completed application with tasks added to timeblocks](./Assets/Images/completed-application.PNG)
