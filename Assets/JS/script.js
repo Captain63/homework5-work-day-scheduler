@@ -1,3 +1,5 @@
+// Pulls current day from Moment.js and writes it to paragraph
+$("#currentDay").text(moment().format("dddd, MMMM Do, YYYY"));
 
 // Pulls current hour in military time (24 hour) for hourColorSetter on intial page laod before hourChecker initiates
 let currentHour = Number(moment().format("HH"));
@@ -42,8 +44,8 @@ const hourColorSetter = ()=> {
 
 // Checks currentHour variable against pull from moment.js every second and updates if currentHour is lower (meaning hour has changed)
 const hourChecker = setInterval(() => {
-    // Pulls current day from Moment.js and writes it to paragraph
-    $("#currentDay").text(`${moment().format("dddd, MMMM Do, YYYY")}`);
+    // Pulls current day from Moment.js and writes it to paragraph (for updating day if planner is open at midnight)
+    $("#currentDay").text(moment().format("dddd, MMMM Do, YYYY"));
 
     // Sets currentHour equal to current hour pulled from moment.js
     currentHour = Number(moment().format("HH"));
