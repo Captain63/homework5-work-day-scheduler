@@ -22,14 +22,14 @@ const hourColorSetter = ()=> {
             $(this).parent().removeClass("present");
 
             // Removes any readonly attributes from previous day
-            $(this).attr("readonly", false);
+            // $(this).attr("readonly", false);
 
         // For assigning current class
         } else if ($(this).data("time") === currentHour) {
             $(this).parent().addClass("present");
             $(this).parent().removeClass("past");
             $(this).parent().removeClass("future");
-            $(this).attr("readonly", false);
+            // $(this).attr("readonly", false);
 
         // For assigning past class
         } else {
@@ -37,7 +37,7 @@ const hourColorSetter = ()=> {
             $(this).parent().removeClass("present");
             $(this).parent().removeClass("future");
             // Adds readonly attributes to make past hour textareas uneditable
-            $(this).attr("readonly", true);
+            // $(this).attr("readonly", true);
         }
     })
 }
